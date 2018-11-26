@@ -1,7 +1,6 @@
 img {
-	width: 30%;
-	float: left;
-	margin: 1.66%;
+	width: 50%;
+	filter: grayscale(100%) blur(3px);
 }
 
 p {
@@ -19,5 +18,23 @@ p {
 	/*max-height: 400px;*/
 	height: 600px;
 	object-fit: cover;
-	/*overflow: hidden;*/
+	overflow: hidden;
+	width: 33.33%;
 }
+
+.container{
+  position: relative;
+  width: 100%;
+  font-size: 0;
+  /*max-width: 20px;*/
+}
+
+
+img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	transition: .3s ease-in-out;
+}
+
